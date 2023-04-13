@@ -1,178 +1,84 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');*/
-
-
-.navBar {
-  padding-bottom: 0.1cm;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 2.7cm;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.541);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.navBar a {
+/* apply a background color and set the font family for the entire document */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+/* style the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
   text-decoration: none;
-  color: white;
-}
-i {
-  font-size: 20px;
 }
 
-i:hover,
-a:hover {
-  color: dodgerblue;
+/* style the form */
+#navv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputBox {
+  margin-bottom: 20px;
+}
+
+.inputBox label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputBox input,
+.inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.inputBox button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.navBar nav li {
-  padding: 10px;
-  margin: 20px;
-  list-style-type: none;
-  display: inline-block;
+.inputBox button:hover {
+  background-color: #555;
 }
-
-#hamMenu {
-  visibility: hidden;
-}
-
-
-body {
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-    background-color:#f7f7f7;
-  }
-  * {box-sizing: border-box}
-  
-  /* Add padding to container elements */
-  .container {
-    
-      padding: 20px;
-        width:1000px;
-      position: absolute;
-      left: 50%;
-      top: 70%;
-      transform: translate(-50%, -50%);
-        border:1px solid #ccc;
-        border-radius:10px;
-        background:white;
-    -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
-    padding-top:1cm;
-    }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-  }
-  select {
-    width: 18%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-  }
-  
-  input[type=phone] {
-    width: 81%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-  }
-
-  input[type=email] {
-    width: 81%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-  }
-  
-  
-  
-  input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
-    background-color: #ddd;
-    outline: none;
-  }
- 
-  #navv{
-    padding-top: 10cm;
-  }
-
-  
-  
-  
-  /* Set a style for all buttons 
-  button {
-    background-color: rgb(148, 219, 42);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    font-size:16px;
-    font-family: Montserrat,Arial, Helvetica, sans-serif;
-    border-radius:10px;
-  }*/
-  .nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 2cm;
-
- }
- 
- 
-.h {
-    border-bottom: 1px solid #555;
-    display: inline;
-    padding-left:0.2cm;
- }
-
-  
-  button{
-    background-color: rgb(148, 219, 42);
-    color: white;
-    padding: 14px 20px;
-    border-radius:10px ;
-  
-  }
-  
-  button:hover {
-    opacity:1;
-  }
-  
-  #birthday{
-    width: 81%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f7f7f7;
-  
-  }
-  
-  input[type=number] {
-      width: 81%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      display: inline-block;
-      border: none;
-      background: #f7f7f7;
-    }
-

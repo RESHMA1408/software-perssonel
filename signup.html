@@ -5,129 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signin</title>
+    
     <style>
         body {
-            font-family:  monospace;
-            font-weight: bolder;
-            background-color: rgba(190, 215, 223, 0.644);
-            
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
-
-        
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Add padding to containers */
-
-        .container {
-            margin-top: 100px;
-            padding: px;
-            background-color: rgba(190, 215, 223, 0.644);
-
-        }
-
-        /* Full-width input fields */
-
-        input[type=text],
-        input[type=password] {
-            font-family: monospace;
+        form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,.2);
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 20px;
+         }
+        h1 {
             text-align: center;
-            width: 50%;
-            padding: 15px;
-            margin-left: 25%;
+            font-size: 24px;
+         }
+        label {
+            display: block;
+            font-weight: bold;
             margin-top: 20px;
-            margin-bottom: 20px;
-            display: list-block;
-            border: none;
-            background: #f1f1f1;
-            border-radius: 10px;
+         }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
         }
-
-        input[type=text]:focus,
-        input[type=password]:focus {
-            background-color: #aff1f15d;
-            outline: none;
-            font-family: monospace;
-        }
-       
-
-        /* Overwrite default styles of hr */
-
-        hr {
-            border: 1px solid #f1f1f1;
-            margin-bottom: 25px;
-        }
-
-        /* Set a style for the submit button */
-
-        .registerbtn {
-            background-color: rgba(48, 195, 231, 0.61);
-           font-family: monospace;
-            color: black;
-            font-size: larger;
-            padding: 11px 10px;
-            margin: 8px 0;
-            border: none;
-            cursor:pointer;
-            width: 50%;
-            opacity: 0.9;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .registerbtn:hover {
-           background-color: black;
-            padding: 15px;
-            transition: 0.3s;
-            color: rgba(186, 202, 245, 0.527);
-            border-radius: 20px;
-        }
-
-        /* Add a blue text color to links */
-
-        a {
-            color: dodgerblue;
-        }
-
-        /* Set a grey background color and center the text of the "sign in" section */
-
-        a{
-            background-color: rgba(42, 119, 219, 0.63);
-           font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            font-size: larger;
-            padding: 11px 10px;
-            margin-left:46.5% ;
-            border: none;
-            cursor:pointer;
-            width: 50%;
-            opacity: 0.9;
-            border-radius: 10px;
-            transition: 0.3s;
-            text-decoration:none ;
-        }
-
-        a:hover {
-           background-color: black;
-            padding: 15px;
-            transition: 0.3s;
+        button {
+            background-color: #4CAF50;
             color: white;
-            border-radius: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
         }
-
-        h1{
-            margin-top: 40px;
-            font-family:monospace;
-            text-align: center;
+        button:hover {
+            background-color: #45a049;
         }
-        label{
-            font-size: 20px;
-          
-        } 
-        input, select, option {
-    font-size: 15px;
-  }
+        .container {
+            padding: 16px;
+        }
     </style>
 </head>
 
